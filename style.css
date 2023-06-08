@@ -1,0 +1,135 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+}
+:root{
+  /* ## Colors */
+
+/* ### Primary */
+
+--Pale-blue: hsl(225, 100%, 94%);
+--Bright-blue: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--Very-pale-blue: hsl(225, 100%, 98%);
+--Desaturated-blue: hsl(224, 23%, 55%);
+--Dark-blue: hsl(223, 47%, 23%);
+
+--font: 'Red Hat Display', sans-serif;
+}
+body{
+  /* background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+background-size: cover;
+background-position-Y: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh; */
+background-image: url(images/pattern-background-desktop.svg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh ;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0 1em;
+
+
+}
+.container{
+  max-width: 23em;
+  border-radius: 1em;
+  overflow: hidden;
+  background-color: var(--Very-pale-blue);
+  /* box-shadow: 0px 1px 4px var(--Dark-blue); */
+}
+/* up div */
+.image1{
+  width:100%;
+}
+/* dowm div */
+.down{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  place-items: center;
+  padding: 0 1.5em;
+}
+.order-summary{
+  font-weight: 700;
+  padding: 1em 0;
+}
+/* paragaph */
+.description{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  color: var(--Desaturated-blue);
+}
+.plan{
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.icon-plan-name{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr ;
+  background-color: rgba(255, 0, 0, 0.02);
+  /* padding: 0.5em; */
+  border-radius: 0.3em;
+  will-change: 100%;
+  margin-bottom: 1.3em;
+  padding: 1em;
+}
+.plan-price{
+  display: grid;
+align-content: center;
+grid-gap: 0.2em;
+}
+.annual-plan{
+  /* font-family: var(--font); */
+  font-weight: 700;
+  font-size: 15px;
+}
+.icone-music{
+  width: 2.5em;
+}
+.price{
+color: var(--Desaturated-blue);}
+.aclass{
+  margin-left: 1em;
+  display: grid;
+  align-content: center;
+  font-weight: 700;
+  font-size: 13px;
+}
+.proceed-payment{
+  display: block;
+  width: 100%;
+  background-color: var(--Bright-blue);
+  padding: 0.8em 0;
+  border: none;
+  color: white;
+  font-weight: 500;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: all ease-in 0.1s;
+  font-size: 13px;
+
+}
+.proceed-payment:hover{
+  background-color: blueviolet;
+}
+.cancel-order{
+ text-decoration: none;
+ margin: 1em 0 2em 0;
+ color:var(--Desaturated-blue);
+ font-weight: 700;
+ font-size: 12px;
+}
